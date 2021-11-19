@@ -1,3 +1,3 @@
-dòng thứ 1
-dòng thứ 2
+Nhập mã sinh_viên_Họ Tên:
+
 
