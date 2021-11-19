@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<?php
+	require_once 'config/dbconnect.php';
+	?>
+	<div class ="header">
+	<?php include_once("fragment/header.php")?>
+</div>
+	<div class="container" >
+		<div class="row">
+			<div class="col-sm-4">
+				<td><a href="index.php">Trang chủ</a></td>
+			<td><strong> | Đăng nhập</strong></td>
+			</div>
+			<div class="col-sm-8" >
+	<form action="xl_login.php" method="post" text-align="center">
+	<table>
+		<br>
+		<tr>
+		<td>Username:</td>
+		<td><input type="text" name="txt_name"></td>
+		</tr>
+		<tr>
+		<td>Password:</td>
+		<td><input type="password" name="txt_pass"></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td></td>
+		<td><br><input type="submit" name="sb_login" value="đăng nhập"></td>
+		</tr>
+		</table>
+	</form>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div class="footer" style="background:#000000">
+<?php include_once("fragment/footer.php")?>
+</div>
+	</body>
+</html>
